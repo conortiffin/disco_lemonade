@@ -410,3 +410,125 @@ footer p {
 	color: #999;
 	margin-top: 50px;
 }
+
+/*---------------------------------------------
+	Media Queries
+----------------------------------------------*/
+
+/* start max-width 1200px*/
+@media screen and (max-width: 1200px) {
+	.meet, 
+	.arrow-left,
+	.customers > img,
+	.crumple,
+	.arrow-right {
+		display: none;
+	}
+	header,
+	section {
+		width: 80%;
+	}
+	header h1 {
+		font-size: 42px;
+		line-height: 42px;
+		margin: 0 5%;
+	}
+	.customers h2,
+	.manifesto h2,
+	.rework h2,
+	.offerings h2 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+	.customers h2 {
+		padding: 0 0 20px 0;
+	}
+	.manifesto h4 {
+		font-size: 16px;
+	}
+	.manifesto p {
+		font-size: 10px;
+		line-height: 14px;
+	}
+	.manifesto .column div:nth-child(n+2),
+	.manifesto .column-end div:nth-child(n+2) {
+		clear: left;
+	}
+	.offerings .column small, .offerings .column-end small {
+	    font-size: 10px;
+	}
+
+} /* end max-width 1200px*/
+
+
+/* start max-width 1050px*/
+@media screen and (max-width: 1050px) {
+	.customers p {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+	.quotes h3 {
+		font-size: 18px;
+	}
+	.products a:first-child {
+    	margin-left: 5%; 
+	}
+} /* end max-width 1050px*/
+
+
+/* start max-width 900px*/
+@media screen and (max-width: 900px) {
+	header h1 {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.products a:first-child {
+    	margin-left: 10%; 
+	}
+	.products a {
+	    width: 80%;
+	    display: block;
+	    margin: 3% 10%;
+	}	
+	.column, .column-end {
+	    float: none; 
+	    width: 75%;
+	    margin: 0 auto;
+	}
+	.column-end div:first-child {
+		clear: left;
+	}
+	.customers p{
+		font-size: 18px;
+	}
+	.manifesto + hr,
+	.rework + hr {
+		display: none;
+	}
+	.rework, .offerings {
+		display: none;
+	}
+} /* end max-width 90px*/
+
+
+/* start max-width 600px*/
+@media screen and (max-width: 600px) {
+	.customers h2,
+	.manifesto h2,
+	.rework h2,
+	.offerings h2 {
+		font-size: 24px;
+		line-height: 24px;
+	}
+	header h1 {
+		font-size: 28px;
+		line-height: 28px;
+	}
+	header h5 {
+	    font-size: 16px;
+	    line-height: 25px;
+	}
+	.column, .column-end {
+	    width: 90%;
+	}
+} /* end max-width 600px*/
